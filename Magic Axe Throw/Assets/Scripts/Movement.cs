@@ -5,18 +5,20 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     Rigidbody rb;
+    [SerializeField] float mainThrust = 100f;
+    [SerializeField] float rotationThrust = 100f;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
         ProcessThrust();
-        ProcessMovement();
+        ProcessRotation();
     }
 
 
@@ -24,23 +26,31 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            transform.position += new Vector3(0, 0.1f, 0);
+            rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
+            // transform.position += new Vector3(0, 0.1f, 0);
         }
-        // else if (Input.GetKey(KeyCode.LeftShift))
-        // {
-        //     transform.position += new Vector3(0, -0.1f, 0);
-        // }
+        else if (Input.GetKey(KeyCode.LeftShift))
+        {
+            rb.AddRelativeForce(Vector3.down * mainThrust * Time.deltaTime);
+        }
     }
 
-    void ProcessMovement()
+    void ProcessRotation()
     {
         if (Input.GetKey(KeyCode.A))
         {
-            transform.position += new Vector3(-0.1f, 0, 0);
+            ApplyRotation(rotationThrust);
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            transform.position += new Vector3(0.1f, 0, 0);
+            ApplyRotation(-rotationThrust);
         }
+    }
+
+    void ApplyRotation(float rotationThisFrame)
+    {
+        rb.freezeRotation = true; // freezing rotation so we can manually rotate
+        transform.Rotate(Vector3.forward * rotationThisFrame * Time.deltaTime);
+        rb.freezeRotation = false; // unfreezing rotation so the physics system can take over
     }
 }
