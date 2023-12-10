@@ -1,17 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    Rigidbody rb;
+    // PARAMETERS - for tuning, typically set in the editor
+    // CACHE - e.g. references for readability or speed
+    // STATE - private instance (member) variables
+
+    // PARAMETERS
     [SerializeField] float mainThrust = 100f;
     [SerializeField] float rotationThrust = 100f;
+    [SerializeField] AudioClip mainEngine;
+
+    // CACHE
+    Rigidbody rb;
+    AudioSource audioSource;
+
+    // STATE
+    bool isAlive = true;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -28,10 +39,19 @@ public class Movement : MonoBehaviour
         {
             rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
             // transform.position += new Vector3(0, 0.1f, 0);
+            // Play audio when thrusting
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(mainEngine);
+            }
         }
         else if (Input.GetKey(KeyCode.LeftShift))
         {
             rb.AddRelativeForce(Vector3.down * mainThrust * Time.deltaTime);
+        }
+        else
+        {
+            audioSource.Stop();
         }
     }
 
