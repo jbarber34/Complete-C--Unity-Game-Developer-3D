@@ -5,22 +5,31 @@ public class CollisionHandler : MonoBehaviour
 {
     // Set the level loading delay time
     [SerializeField] float levelLoadDelay = 2f;
-    [SerializeField] AudioClip crash;
-    [SerializeField] AudioClip success;
+    [SerializeField] AudioClip crashAudio;
+    [SerializeField] AudioClip successAudio;
+
+    [SerializeField] ParticleSystem crashParticles;
+    [SerializeField] ParticleSystem successParticles;
 
     AudioSource audioSource;
 
     bool isTransitioning = false;
+    bool collisionDisabled = false;
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+    }
 
+    // TODO: REMOVE THIS BEFORE FINAL BUILD OR PUBLISHING SO PLAYERS CAN'T CHEAT!!!
+    void Update()
+    {
+        RespondToDebugKeys();
     }
 
     void OnCollisionEnter(Collision other)
     {
-        if (isTransitioning) { return; }
+        if (isTransitioning || collisionDisabled) { return; }
 
         // Switch statement to determine what to do when colliding with different objects
         switch (other.gameObject.tag)
@@ -39,16 +48,16 @@ public class CollisionHandler : MonoBehaviour
 
     void CrashSequence()
     {
-        // TODO: Add particle effects 
         isTransitioning = true;
         audioSource.Stop();
-        audioSource.PlayOneShot(crash);
+        audioSource.PlayOneShot(crashAudio);
+        crashParticles.Play();
         GetComponent<Movement>().enabled = false;
         Invoke("ReloadLevel", levelLoadDelay);
     }
 
 
-    void LoadNextLevel()
+    public void LoadNextLevel()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int nextSceneIndex = currentSceneIndex + 1;
@@ -63,12 +72,26 @@ public class CollisionHandler : MonoBehaviour
         SceneManager.LoadScene(nextSceneIndex);
     }
 
+    //  Set up debug keys to test the game
+    void RespondToDebugKeys()
+    {
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            LoadNextLevel();
+        }
+        else if (Input.GetKeyDown(KeyCode.C))
+        {
+            // Toggle collision
+            collisionDisabled = !collisionDisabled;
+        }
+    }
+
     void SuccessSequence()
     {
-        // TODO: Add particle effects
         isTransitioning = true;
         audioSource.Stop();
-        audioSource.PlayOneShot(success);
+        audioSource.PlayOneShot(successAudio);
+        successParticles.Play();
         GetComponent<Movement>().enabled = false;
         Invoke("LoadNextLevel", levelLoadDelay);
     }
