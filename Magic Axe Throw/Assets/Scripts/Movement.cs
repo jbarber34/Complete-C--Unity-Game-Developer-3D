@@ -7,8 +7,8 @@ public class Movement : MonoBehaviour
     // STATE - private instance (member) variables
 
     // PARAMETERS
-    [SerializeField] float mainThrust = 100f;
-    [SerializeField] float rotationThrust = 100f;
+    [SerializeField] float mainThrust = 1000f;
+    [SerializeField] float rotationThrust = 200f;
     [SerializeField] AudioClip mainEngine;
     [SerializeField] ParticleSystem thrustParticles;
 
