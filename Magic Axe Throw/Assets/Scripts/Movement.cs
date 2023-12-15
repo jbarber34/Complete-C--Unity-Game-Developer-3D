@@ -18,7 +18,7 @@ public class Movement : MonoBehaviour
     AudioSource audioSource;
 
     // STATE
-    bool isAlive = true;
+    // bool isAlive = true;
 
     // Start is called before the first frame update
     void Start()

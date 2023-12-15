@@ -8,7 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Over.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Scenes/Under Original.unity
+    guid: 354e2736eff654d3cbd803204837d971
   - enabled: 1
     path: Assets/Scenes/Under.unity
-    guid: 354e2736eff654d3cbd803204837d971
+    guid: 13f2f195d12644b97beff1b6225ac075
+  - enabled: 1
+    path: Assets/Scenes/Through.unity
+    guid: ffdbf1384fc504c46a0cb2d27ee7c002
+  - enabled: 1
+    path: Assets/Scenes/Push.unity
+    guid: da659b72859634eef85d90ace8fff41e
   m_configObjects: {}
