@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5417604327655588935}
+  - component: {fileID: 197185550096120162}
   m_Layer: 0
   m_Name: StarSparrow1
   m_TagString: Untagged
@@ -59,6 +60,18 @@ Transform:
   - {fileID: 6434278197650293916}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &197185550096120162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4640082839775715069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bcd6df787bf4f7c830ad5f9cec47f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6015052604444899723
 PrefabInstance:
   m_ObjectHideFlags: 0
