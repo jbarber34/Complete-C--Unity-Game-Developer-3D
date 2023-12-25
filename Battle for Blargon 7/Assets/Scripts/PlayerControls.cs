@@ -7,6 +7,16 @@ public class PlayerControls : MonoBehaviour
     // [SerializeField] InputAction movement;
     // [SerializeField] InputAction fire;
     // NEW INPUT SYSTEM //
+    [SerializeField] float controlSpeed = 25f;
+    [SerializeField] float xRange = 15f;
+    [SerializeField] float yMin = 5f;
+    [SerializeField] float yMax = 15f;
+
+    // [SerializeField] float positionPitchFactor = -2f;
+    [SerializeField] float positionYawFactor = 2f;
+    [SerializeField] float controlFactor = -20f;
+
+    float xThrow, yThrow;
 
     // Start is called before the first frame update
     void Start()
@@ -29,15 +39,57 @@ public class PlayerControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Old Unity Input System //
-        float xThrow = Input.GetAxis("Horizontal");
-        float yThrow = Input.GetAxis("Vertical");
+        ProcessTranslation();
+        ProcessRotation();
+        ProcessFiring();
+    }
 
+    void ProcessFiring()
+    {
+        // Old Unity Input System //
+        if (Input.GetButton("Fire1"))
+        {
+            print("Pew Pew");
+        }
+        // Old Unity Input System //
+
+        // New Unity Input System //
+        // if (fire.ReadValue<float>() > 0)
+        // {
+        //     print("Pew Pew");
+        // }
+        // New Unity Input System //
+    }
+
+    void ProcessRotation()
+    {
+        float pitch = yThrow * controlFactor;
+        float yaw = transform.localPosition.x * positionYawFactor;
+        float roll = xThrow * controlFactor;
+
+        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+    }
+
+    void ProcessTranslation()
+    {
+        // Old Unity Input System //
+        xThrow = Input.GetAxis("Horizontal");
+        yThrow = Input.GetAxis("Vertical");
         // Old Unity Input System //
 
         // New Unity Input System //
         // float xThrow = movement.ReadValue<Vector2>().x;
         // float yThrow = movement.ReadValue<Vector2>().y;
         // New Unity Input System //
+
+        float xOffSet = xThrow * Time.deltaTime * controlSpeed;
+        float rawXPos = transform.localPosition.x + xOffSet;
+        float clampedXPos = Mathf.Clamp(rawXPos, -xRange, xRange);
+
+        float yOffSet = yThrow * Time.deltaTime * controlSpeed;
+        float rawYPos = transform.localPosition.y + yOffSet;
+        float clampedYPos = Mathf.Clamp(rawYPos, -yMin, yMax);
+
+        transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
     }
 }
