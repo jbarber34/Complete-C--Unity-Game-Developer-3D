@@ -7,14 +7,22 @@ public class PlayerControls : MonoBehaviour
     // [SerializeField] InputAction movement;
     // [SerializeField] InputAction fire;
     // NEW INPUT SYSTEM //
-    [SerializeField] float controlSpeed = 25f;
-    [SerializeField] float xRange = 15f;
-    [SerializeField] float yMin = 5f;
-    [SerializeField] float yMax = 15f;
 
+    [Header("Movement Tuning")]
+    [Tooltip("Controls speed of the ship up/down movement")][SerializeField] float controlSpeed = 25f;
+    [Tooltip("Left/Right movement range")][SerializeField] float xRange = 15f;
+    [Tooltip("Up movement range")][SerializeField] float yMin = 5f;
+    [Tooltip("Down movement range")][SerializeField] float yMax = 15f;
+
+    [Header("Laser gun array")]
+    [Tooltip("Array of lasers to turn on/off when firing")][SerializeField] GameObject[] lasers;
+
+    [Header("Screen position based tuning")]
     // [SerializeField] float positionPitchFactor = -2f;
-    [SerializeField] float positionYawFactor = 2f;
-    [SerializeField] float controlFactor = -20f;
+    [Tooltip("Amount of Yaw when turning")][SerializeField] float positionYawFactor = 2f;
+
+    [Header("Control throw based tuning")]
+    [Tooltip("Amount of Pitch/Roll when going up/down")][SerializeField] float controlFactor = -20f;
 
     float xThrow, yThrow;
 
@@ -44,12 +52,17 @@ public class PlayerControls : MonoBehaviour
         ProcessFiring();
     }
 
+
     void ProcessFiring()
     {
         // Old Unity Input System //
         if (Input.GetButton("Fire1"))
         {
-            print("Pew Pew");
+            SetLasersActive(true);
+        }
+        else
+        {
+            SetLasersActive(false);
         }
         // Old Unity Input System //
 
@@ -91,5 +104,14 @@ public class PlayerControls : MonoBehaviour
         float clampedYPos = Mathf.Clamp(rawYPos, -yMin, yMax);
 
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
+    }
+
+    void SetLasersActive(bool isActive)
+    {
+        foreach (GameObject laser in lasers)
+        {
+            var emissionModule = laser.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = isActive;
+        }
     }
 }
