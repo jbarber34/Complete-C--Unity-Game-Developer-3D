@@ -78,6 +78,7 @@ MonoBehaviour:
   xRange: 15
   yMin: 5
   yMax: 15
+  lasers: []
   positionYawFactor: 2
   controlFactor: -20
 --- !u!1001 &3868965433473062629
@@ -94,15 +95,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5301550519264934372, guid: db52a34a8d5de4369b559842b215c155, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.23
+      value: 4.4
       objectReference: {fileID: 0}
     - target: {fileID: 5301550519264934372, guid: db52a34a8d5de4369b559842b215c155, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.24
+      value: -0.733
       objectReference: {fileID: 0}
     - target: {fileID: 5301550519264934372, guid: db52a34a8d5de4369b559842b215c155, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.11
+      value: 1.68
       objectReference: {fileID: 0}
     - target: {fileID: 5301550519264934372, guid: db52a34a8d5de4369b559842b215c155, type: 3}
       propertyPath: m_LocalRotation.w
@@ -184,15 +185,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5301550519264934372, guid: db52a34a8d5de4369b559842b215c155, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.23
+      value: -4.4
       objectReference: {fileID: 0}
     - target: {fileID: 5301550519264934372, guid: db52a34a8d5de4369b559842b215c155, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.24
+      value: -0.733
       objectReference: {fileID: 0}
     - target: {fileID: 5301550519264934372, guid: db52a34a8d5de4369b559842b215c155, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.11
+      value: 1.68
       objectReference: {fileID: 0}
     - target: {fileID: 5301550519264934372, guid: db52a34a8d5de4369b559842b215c155, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1465,6 +1466,10 @@ PrefabInstance:
     - target: {fileID: 6551042262188445185, guid: 01a1e23558e35e64989f5b1129a2c195, type: 3}
       propertyPath: m_Name
       value: StarSparrow_Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222817189813762321, guid: 01a1e23558e35e64989f5b1129a2c195, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
