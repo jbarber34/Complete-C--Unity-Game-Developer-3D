@@ -4,7 +4,7 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] GameObject deathVFX;
     [SerializeField] Transform parent;
-    [SerializeField] int scorePerHit = 12;
+    [SerializeField] int scorePerHit = 10;
 
     // Bring in the score board
     ScoreBoard scoreBoard;
