@@ -4,17 +4,17 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] GameObject deathVFX;
+    [SerializeField] GameObject hitVFX;
     [SerializeField] Transform parent;
     [SerializeField] int scorePerHit = 10;
-    [SerializeField] GameObject hitVFX;
     [SerializeField] int hitPoints = 5;
 
+    public List<ParticleCollisionEvent> collisionEvents; // creating a list of particle collision events
     Color initialColor; // Marking the color of the enemy as a variable
     float hitColorModifier = 0f; // new variable so the enemy changes color to a reddish tone after being hit
 
     // Bring in the score board
     ScoreBoard scoreBoard;
-    public List<ParticleCollisionEvent> collisionEvents;
 
 
     void Start()
@@ -38,7 +38,15 @@ public class Enemy : MonoBehaviour
             GameObject vfx = Instantiate(hitVFX, pos, Quaternion.identity); // creating the explosion effect.
             vfx.transform.parent = parent; // making the explosion effect a child of the enemy, so it follows it around.
         }
-        ProcessHit();
+
+        if (hitPoints >= 0)
+        {
+            ProcessHit();
+        }
+        else
+        {
+            KillEnemy();
+        }
     }
 
     void KillEnemy()
@@ -51,19 +59,10 @@ public class Enemy : MonoBehaviour
 
     void ProcessHit()
     {
-        if (hitPoints >= 0) // that means, if the enemy is not dead yet...
-        {
-            hitPoints--; // reduces the enemy's Health by 1
-            scoreBoard.UpdateScore(scorePerHit); // raise score by 10 by each hit
-            hitColorModifier = hitColorModifier + 0.1f; // increases this variable so the enemy gets redder and redder each time, by the next code:
-            GetComponent<MeshRenderer>().material.color = new Color
-           (initialColor.r + hitColorModifier, initialColor.g - hitColorModifier, initialColor.b - hitColorModifier, initialColor.a); // this code makes the enemy becomes the same color as it always was, with this extra hitColorModifier...
-
-        }
-        else // if the enemy is dead...
-        {
-            KillEnemy();
-        }
-
+        hitPoints--; // reduces the enemy's Health by 1
+        scoreBoard.UpdateScore(scorePerHit); // raise score by 10 by each hit
+        hitColorModifier = hitColorModifier + 0.1f; // increases this variable so the enemy gets redder and redder each time, by the next code:
+        GetComponent<MeshRenderer>().material.color = new Color
+       (initialColor.r + hitColorModifier, initialColor.g - hitColorModifier, initialColor.b - hitColorModifier, initialColor.a); // this code makes the enemy becomes the same color as it always was, with this extra hitColorModifier...
     }
 }
