@@ -24,7 +24,15 @@ public class Enemy : MonoBehaviour
 
         // creating the collision list
         collisionEvents = new List<ParticleCollisionEvent>();
+        AddRigidbody();
 
+    }
+
+    void AddRigidbody()
+    {
+        // Add rigidbody to enemy
+        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
+        rb.useGravity = false;
     }
 
     private void OnParticleCollision(GameObject other)
