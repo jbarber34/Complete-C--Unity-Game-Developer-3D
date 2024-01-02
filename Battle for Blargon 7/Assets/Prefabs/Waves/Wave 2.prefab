@@ -1,0 +1,333 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6495991241867580092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5082161558438749788}
+  - component: {fileID: 2594250319252722661}
+  m_Layer: 0
+  m_Name: Wave 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5082161558438749788
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6495991241867580092}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 430.1, y: 0, z: 288.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5844712979993147637}
+  - {fileID: 1416725890843647380}
+  - {fileID: 8270443685271324651}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &2594250319252722661
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6495991241867580092}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 70a8da244cd7c41bd9005c0f4780b0c9, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 867552957868259811, guid: 70a8da244cd7c41bd9005c0f4780b0c9, type: 2}
+    value: {fileID: 8260854115865373829}
+  - key: {fileID: 4867794931122620221, guid: 70a8da244cd7c41bd9005c0f4780b0c9, type: 2}
+    value: {fileID: 383002614591742826}
+  - key: {fileID: 7273340652740532257, guid: 70a8da244cd7c41bd9005c0f4780b0c9, type: 2}
+    value: {fileID: 7679383327549502963}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1001 &522427047349759945
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5082161558438749788}
+    m_Modifications:
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 453.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 29.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 294.82022
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9618812
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.27346772
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.000001417079
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6466573976046251913, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_Name
+      value: Darkstorm Reaper
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6466573976046251913, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8260854115865373829}
+  m_SourcePrefab: {fileID: 100100000, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+--- !u!4 &5844712979993147637 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+  m_PrefabInstance: {fileID: 522427047349759945}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6844884726681108544 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6466573976046251913, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+  m_PrefabInstance: {fileID: 522427047349759945}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8260854115865373829
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6844884726681108544}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1001 &2637450674458448087
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5082161558438749788}
+    m_Modifications:
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 406.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 29.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 219.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9618812
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.27346772
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.000001417079
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6466573976046251913, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_Name
+      value: Darkstorm Reaper (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6466573976046251913, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7679383327549502963}
+  m_SourcePrefab: {fileID: 100100000, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+--- !u!4 &8270443685271324651 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+  m_PrefabInstance: {fileID: 2637450674458448087}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9018451309781614430 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6466573976046251913, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+  m_PrefabInstance: {fileID: 2637450674458448087}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7679383327549502963
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9018451309781614430}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1001 &5041119447240673960
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5082161558438749788}
+    m_Modifications:
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 431.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 29.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 259.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9618812
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.27346772
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.000001417079
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6466573976046251913, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      propertyPath: m_Name
+      value: Darkstorm Reaper (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6466573976046251913, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 383002614591742826}
+  m_SourcePrefab: {fileID: 100100000, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+--- !u!4 &1416725890843647380 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6223024555192850236, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+  m_PrefabInstance: {fileID: 5041119447240673960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2037955422314145057 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6466573976046251913, guid: 5a40d44b717e44b0bb06920090d1a8bd, type: 3}
+  m_PrefabInstance: {fileID: 5041119447240673960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &383002614591742826
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037955422314145057}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

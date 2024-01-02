@@ -5,7 +5,6 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] GameObject deathVFX;
     [SerializeField] GameObject hitVFX;
-    [SerializeField] Transform parent;
     [SerializeField] int scorePerHit = 10;
     [SerializeField] int hitPoints = 5;
 
@@ -15,12 +14,16 @@ public class Enemy : MonoBehaviour
 
     // Bring in the score board
     ScoreBoard scoreBoard;
+    GameObject parentGameObject;
 
 
     void Start()
     {
         // Find the score board
         scoreBoard = FindObjectOfType<ScoreBoard>();
+
+        // Find parent type
+        parentGameObject = GameObject.FindWithTag("SpawnAtRuntime");
 
         // creating the collision list
         collisionEvents = new List<ParticleCollisionEvent>();
@@ -37,14 +40,14 @@ public class Enemy : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        ParticleSystem part = other.GetComponent<ParticleSystem>(); // *** important! Making a variable to acess the particle system of the emmiting object, in this case, the lasers from my player ship.
+        ParticleSystem part = other.GetComponent<ParticleSystem>(); // *** important! Making a variable to access the particle system of the emmiting object, in this case, the lasers from my player ship.
         int numCollisionEvents = part.GetCollisionEvents(this.gameObject, collisionEvents);
 
         foreach (ParticleCollisionEvent collisionEvent in collisionEvents) //  for each collision, do the following:
         {
             Vector3 pos = collisionEvent.intersection; // the point of intersection between the particle and the enemy
             GameObject vfx = Instantiate(hitVFX, pos, Quaternion.identity); // creating the explosion effect.
-            vfx.transform.parent = parent; // making the explosion effect a child of the enemy, so it follows it around.
+            vfx.transform.parent = parentGameObject.transform; // making the explosion effect a child of the enemy, so it follows it around.
         }
 
         if (hitPoints >= 0)
@@ -61,7 +64,7 @@ public class Enemy : MonoBehaviour
     {
         scoreBoard.UpdateScore(100); // Raise points by 100 (deaths are more valuable than hits
         GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
-        vfx.transform.parent = parent;
+        vfx.transform.parent = parentGameObject.transform;
         Destroy(gameObject);
     }
 
