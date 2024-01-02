@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject deathVFX;
     [SerializeField] GameObject hitVFX;
     [SerializeField] int scorePerHit = 10;
+    [SerializeField] int scorePerDeath = 100;
     [SerializeField] int hitPoints = 5;
 
     public List<ParticleCollisionEvent> collisionEvents; // creating a list of particle collision events
@@ -62,7 +63,7 @@ public class Enemy : MonoBehaviour
 
     void KillEnemy()
     {
-        scoreBoard.UpdateScore(100); // Raise points by 100 (deaths are more valuable than hits
+        scoreBoard.UpdateScore(scorePerDeath); // Raise points by 100 (deaths are more valuable than hits
         GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
         vfx.transform.parent = parentGameObject.transform;
         Destroy(gameObject);
