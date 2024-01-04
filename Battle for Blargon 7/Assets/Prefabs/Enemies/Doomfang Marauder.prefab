@@ -116,7 +116,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cb69702e662a4114aa3a332d2da74996, type: 2}
+  - {fileID: 2100000, guid: 67acd285733fed44fb1db4a42bd626c4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -152,8 +152,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 4331808479415138483, guid: 0be8168da5d2b4386bea7c060d93a503, type: 3}
   hitVFX: {fileID: 9118085493382015271, guid: aec60a12cd9c24d0ea78fa663eaa3741, type: 3}
-  parent: {fileID: 0}
   scorePerHit: 10
+  scorePerDeath: 100
   hitPoints: 3
 --- !u!1 &846829056766832888
 GameObject:
