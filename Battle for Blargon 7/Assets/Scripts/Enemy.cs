@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] GameObject deathVFX;
+    [SerializeField] GameObject deathFX;
     [SerializeField] GameObject hitVFX;
     [SerializeField] int scorePerHit = 10;
     [SerializeField] int scorePerDeath = 100;
@@ -64,8 +64,8 @@ public class Enemy : MonoBehaviour
     void KillEnemy()
     {
         scoreBoard.UpdateScore(scorePerDeath); // Raise points by 100 (deaths are more valuable than hits
-        GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
-        vfx.transform.parent = parentGameObject.transform;
+        GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);
+        fx.transform.parent = parentGameObject.transform;
         Destroy(gameObject);
     }
 

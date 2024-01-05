@@ -1519,6 +1519,7 @@ GameObject:
   - component: {fileID: 2130862063820438278}
   - component: {fileID: 1983069145329155524}
   - component: {fileID: 2527016656002037688}
+  - component: {fileID: 5811381442112771390}
   m_Layer: 0
   m_Name: Nightshade Eclipse
   m_TagString: Untagged
@@ -1604,7 +1605,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5922e9944995a4b63aed068fc265d194, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 4331808479415138483, guid: 0be8168da5d2b4386bea7c060d93a503, type: 3}
+  deathFX: {fileID: 4331808479415138483, guid: 0be8168da5d2b4386bea7c060d93a503, type: 3}
   hitVFX: {fileID: 9118085493382015271, guid: aec60a12cd9c24d0ea78fa663eaa3741, type: 3}
   scorePerHit: 80
-  hitPoints: 10
+  scorePerDeath: 100
+  hitPoints: 15
+--- !u!65 &5811381442112771390
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8316748718215642305}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 7.10189, y: 6.631362, z: 10.594524}
+  m_Center: {x: 0, y: -0.00000059604645, z: 0.00000071525574}
