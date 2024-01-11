@@ -11,6 +11,14 @@ public class CollisionHandler : MonoBehaviour
 
     [SerializeField] GameObject[] meshChildren;
 
+    bool collisionDisabled = false;
+
+    // TODO: REMOVE THIS BEFORE FINAL BUILD OR PUBLISHING SO PLAYERS CAN'T CHEAT!!!
+    void Update()
+    {
+        RespondToDebugKeys();
+    }
+
     void HideMeshInChildren()
     {
         foreach (GameObject part in meshChildren)
@@ -23,7 +31,10 @@ public class CollisionHandler : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        StartCrashSequence();
+        if (!collisionDisabled) // Check if collision is enabled
+        {
+            StartCrashSequence();
+        }
     }
 
     void ReloadLevel()
@@ -32,6 +43,16 @@ public class CollisionHandler : MonoBehaviour
 
         // Reload the level on collision with anything else
         SceneManager.LoadScene(currentSceneIndex);
+    }
+
+    //  Set up debug keys to test the game
+    void RespondToDebugKeys()
+    {
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            // Toggle collision
+            collisionDisabled = !collisionDisabled;
+        }
     }
 
     void StartCrashSequence()
