@@ -1,0 +1,1179 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &872623925185048571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 594201184911278565}
+  - component: {fileID: 4199394815515937105}
+  m_Layer: 0
+  m_Name: Wave 10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &594201184911278565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872623925185048571}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1862.013, y: -1741.7257, z: 6236.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1060244211132443144}
+  - {fileID: 7893994441722351565}
+  - {fileID: 42081303963052747}
+  - {fileID: 8435453275790861637}
+  - {fileID: 8969187582652718625}
+  - {fileID: 9084028805135647065}
+  - {fileID: 8524763362864830560}
+  - {fileID: 6535870176345140175}
+  - {fileID: 2278986507683015337}
+  - {fileID: 7683596844275607508}
+  - {fileID: 2988663001041572812}
+  - {fileID: 3671543712336229378}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &4199394815515937105
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872623925185048571}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: f93763fb2aa9c48b1920e91655c18db3, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 4723316760151440990, guid: f93763fb2aa9c48b1920e91655c18db3, type: 2}
+    value: {fileID: 2568032897841282609}
+  - key: {fileID: 915483226563231437, guid: f93763fb2aa9c48b1920e91655c18db3, type: 2}
+    value: {fileID: 1032150648260714557}
+  - key: {fileID: -4003080400008892032, guid: f93763fb2aa9c48b1920e91655c18db3, type: 2}
+    value: {fileID: 1794187882416287637}
+  - key: {fileID: -5047419005510252456, guid: f93763fb2aa9c48b1920e91655c18db3, type: 2}
+    value: {fileID: 2014393512165643012}
+  - key: {fileID: 6466618323452729414, guid: f93763fb2aa9c48b1920e91655c18db3, type: 2}
+    value: {fileID: 5566246895875087503}
+  - key: {fileID: 6048826248056803454, guid: f93763fb2aa9c48b1920e91655c18db3, type: 2}
+    value: {fileID: 7156495717104310910}
+  - key: {fileID: -1658858301270050372, guid: f93763fb2aa9c48b1920e91655c18db3, type: 2}
+    value: {fileID: 4992737190438244825}
+  - key: {fileID: -8978448243833775477, guid: f93763fb2aa9c48b1920e91655c18db3, type: 2}
+    value: {fileID: 6962089911782541997}
+  - key: {fileID: -4318574884458633033, guid: f93763fb2aa9c48b1920e91655c18db3, type: 2}
+    value: {fileID: 8864062903841311451}
+  - key: {fileID: -7015358507173107302, guid: f93763fb2aa9c48b1920e91655c18db3, type: 2}
+    value: {fileID: 3932545587881185064}
+  - key: {fileID: -4227947042897322980, guid: f93763fb2aa9c48b1920e91655c18db3, type: 2}
+    value: {fileID: 2485877080887066977}
+  - key: {fileID: 5621671769546658006, guid: f93763fb2aa9c48b1920e91655c18db3, type: 2}
+    value: {fileID: 5570325524018889668}
+  m_ExposedReferences:
+    m_References: []
+--- !u!1001 &329165442105901870
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 594201184911278565}
+    m_Modifications:
+    - target: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_Name
+      value: Doomfang Marauder (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2268.6199
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1788.3301
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5793.1396
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.76179326
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000001664952
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.64782023
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000000141585605
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -80.755
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7156495717104310910}
+  m_SourcePrefab: {fileID: 100100000, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+--- !u!1 &883927533955955204 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 329165442105901870}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7156495717104310910
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883927533955955204}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &9084028805135647065 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 329165442105901870}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &502554593626184790
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 594201184911278565}
+    m_Modifications:
+    - target: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_Name
+      value: Doomfang Marauder (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2258.6199
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1780.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5787.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.76179326
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000001664952
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.64782023
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000000141585605
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -80.755
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5566246895875087503}
+  m_SourcePrefab: {fileID: 100100000, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+--- !u!1 &1021287890606056828 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 502554593626184790}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5566246895875087503
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021287890606056828}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &8969187582652718625 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 502554593626184790}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &923116104100534807
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 594201184911278565}
+    m_Modifications:
+    - target: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_Name
+      value: Doomfang Marauder (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2259.5698
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1788.3301
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5781.5996
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.76179326
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000001664952
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.64782023
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000000141585605
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -80.755
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4992737190438244825}
+  m_SourcePrefab: {fileID: 100100000, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+--- !u!1 &295733880562246461 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 923116104100534807}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &4992737190438244825
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295733880562246461}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &8524763362864830560 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 923116104100534807}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1121776909439674162
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 594201184911278565}
+    m_Modifications:
+    - target: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_Name
+      value: Doomfang Marauder (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2269.2297
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1770.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5765.9097
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.76179326
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000001664952
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.64782023
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000000141585605
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -80.755
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2014393512165643012}
+  m_SourcePrefab: {fileID: 100100000, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+--- !u!1 &523652818122055192 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 1121776909439674162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2014393512165643012
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523652818122055192}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &8435453275790861637 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 1121776909439674162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1161933886793737635
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 594201184911278565}
+    m_Modifications:
+    - target: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_Name
+      value: Doomfang Marauder (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2273.1199
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1779.7001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5768.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.76179326
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000001664952
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.64782023
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000000141585605
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -80.755
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3932545587881185064}
+  m_SourcePrefab: {fileID: 100100000, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+--- !u!1 &1798411692099198089 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 1161933886793737635}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &3932545587881185064
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798411692099198089}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &7683596844275607508 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 1161933886793737635}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1660843335084707258
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 594201184911278565}
+    m_Modifications:
+    - target: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_Name
+      value: Doomfang Marauder (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2260.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1770.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5776.5796
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.76179326
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000001664952
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.64782023
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000000141585605
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -80.755
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1032150648260714557}
+  m_SourcePrefab: {fileID: 100100000, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+--- !u!1 &2295069340827104400 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 1660843335084707258}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1032150648260714557
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2295069340827104400}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &7893994441722351565 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 1660843335084707258}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2320912243783854520
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 594201184911278565}
+    m_Modifications:
+    - target: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_Name
+      value: Doomfang Marauder (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2261.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1788.3301
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5770.4795
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.76179326
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000001664952
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.64782023
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000000141585605
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -80.755
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6962089911782541997}
+  m_SourcePrefab: {fileID: 100100000, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+--- !u!1 &2945547889259597970 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 2320912243783854520}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6962089911782541997
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2945547889259597970}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &6535870176345140175 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 2320912243783854520}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5220353278073042549
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 594201184911278565}
+    m_Modifications:
+    - target: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_Name
+      value: Doomfang Marauder (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2264.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1780.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5798.6797
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.76179326
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000001664952
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.64782023
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000000141585605
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -80.755
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5570325524018889668}
+  m_SourcePrefab: {fileID: 100100000, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+--- !u!4 &3671543712336229378 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 5220353278073042549}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4658783550554361695 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 5220353278073042549}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5570325524018889668
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4658783550554361695}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1001 &6050664174779355579
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 594201184911278565}
+    m_Modifications:
+    - target: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_Name
+      value: Doomfang Marauder (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2263.8198
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1779.7001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5755.4795
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.76179326
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000001664952
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.64782023
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000000141585605
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -80.755
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2485877080887066977}
+  m_SourcePrefab: {fileID: 100100000, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+--- !u!4 &2988663001041572812 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 6050664174779355579}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6570046327244777617 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 6050664174779355579}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2485877080887066977
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6570046327244777617}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1001 &7287118931109800158
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 594201184911278565}
+    m_Modifications:
+    - target: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_Name
+      value: Doomfang Marauder (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2263.3198
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1788.3301
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5758.5796
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.76179326
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000001664952
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.64782023
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000000141585605
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -80.755
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8864062903841311451}
+  m_SourcePrefab: {fileID: 100100000, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+--- !u!4 &2278986507683015337 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 7287118931109800158}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7923016324198814196 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 7287118931109800158}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8864062903841311451
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7923016324198814196}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1001 &8374201985804462207
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 594201184911278565}
+    m_Modifications:
+    - target: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_Name
+      value: Doomfang Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2271.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1778
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5781.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.76179326
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000001664952
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.64782023
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000000141585605
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -80.755
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2568032897841282609}
+  m_SourcePrefab: {fileID: 100100000, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+--- !u!4 &1060244211132443144 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 8374201985804462207}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8998786921820967253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 8374201985804462207}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2568032897841282609
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8998786921820967253}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1001 &8796685184330066108
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 594201184911278565}
+    m_Modifications:
+    - target: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_Name
+      value: Doomfang Marauder (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2265.5298
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1770.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5788.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.76179326
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000001664952
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.64782023
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000000141585605
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -80.755
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1794187882416287637}
+  m_SourcePrefab: {fileID: 100100000, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+--- !u!4 &42081303963052747 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8827506242999566967, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 8796685184330066108}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8268929698659062166 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 636477944238127402, guid: 90249019d36ff46e6937e73fc5276157, type: 3}
+  m_PrefabInstance: {fileID: 8796685184330066108}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1794187882416287637
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8268929698659062166}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
