@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 // using UnityEngine.InputSystem;
 
 public class PlayerControls : MonoBehaviour
@@ -29,7 +31,7 @@ public class PlayerControls : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        StartCoroutine(waiter());
     }
 
     // NEW INPUT SYSTEM //
@@ -113,5 +115,12 @@ public class PlayerControls : MonoBehaviour
             var emissionModule = laser.GetComponent<ParticleSystem>().emission;
             emissionModule.enabled = isActive;
         }
+    }
+
+    IEnumerator waiter()
+    {
+        yield return new WaitForSeconds(208);
+
+        SceneManager.LoadScene(3);
     }
 }

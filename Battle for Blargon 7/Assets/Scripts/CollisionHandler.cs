@@ -19,6 +19,11 @@ public class CollisionHandler : MonoBehaviour
         RespondToDebugKeys();
     }
 
+    void Defeat()
+    {
+        SceneManager.LoadScene(2);
+    }
+
     void HideMeshInChildren()
     {
         foreach (GameObject part in meshChildren)
@@ -60,6 +65,9 @@ public class CollisionHandler : MonoBehaviour
         crashVFX.Play();
         HideMeshInChildren();
         GetComponent<PlayerControls>().enabled = false;
-        Invoke("ReloadLevel", levelLoadDelay);
+        // This would reload level after a crasy
+        // Invoke("ReloadLevel", levelLoadDelay);
+        // This takes us to the defeat screen after a delay
+        Invoke("Defeat", levelLoadDelay);
     }
 }
