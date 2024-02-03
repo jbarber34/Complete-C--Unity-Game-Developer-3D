@@ -3,12 +3,66 @@ using UnityEngine;
 
 public class GridManager : MonoBehaviour
 {
-    [SerializeField] Vector2Int gridSize = new Vector2Int(10, 10);
+    [SerializeField] Vector2Int gridSize;
+    [Tooltip("World Grid Size - Should match UnityEditor snap settings.")]
+    [SerializeField] int unityGridSize = 10;
+    public int UnityGridSize { get { return unityGridSize; } }
+
     Dictionary<Vector2Int, Node> grid = new Dictionary<Vector2Int, Node>();
+    public Dictionary<Vector2Int, Node> Grid { get { return grid; } }
 
     void Awake()
     {
         CreateGrid();
+    }
+
+    public Node GetNode(Vector2Int coordinates)
+    {
+        if (grid.ContainsKey(coordinates))
+        {
+            return grid[coordinates];
+        }
+        return null;
+    }
+
+    public void BlockNode(Vector2Int coordinates)
+    {
+        if (grid.ContainsKey(coordinates))
+        {
+            grid[coordinates].isWalkable = false;
+        }
+    }
+
+    public void ResetNodes()
+    {
+        foreach (KeyValuePair<Vector2Int, Node> entry in grid)
+        {
+            entry.Value.connectedTo = null;
+            entry.Value.isExplored = false;
+            entry.Value.isPath = false;
+        }
+    }
+
+    public Vector2Int GetCoordinatesFromPosition(Vector3 position)
+    {
+        Vector2Int coordinates = new Vector2Int
+        {
+            x = Mathf.RoundToInt(position.x / unityGridSize),
+            y = Mathf.RoundToInt(position.z / unityGridSize)
+        };
+
+        return coordinates;
+    }
+
+    public Vector3 GetPositionFromCoordinates(Vector2Int coordinates)
+    {
+        Vector3 position = new Vector3
+        {
+            x = coordinates.x * unityGridSize,
+            z = coordinates.y * unityGridSize
+        };
+
+        return position;
     }
 
     void CreateGrid()
