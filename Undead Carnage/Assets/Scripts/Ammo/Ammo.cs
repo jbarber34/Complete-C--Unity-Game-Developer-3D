@@ -13,6 +13,17 @@ public class Ammo : MonoBehaviour
         public int ammoAmount;
     }
 
+    // TODO: Maybe remove so people can't cheat...?
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.C) && Input.GetKey(KeyCode.LeftShift))
+        {
+            IncreaseAmmo(AmmoType.Pistol, 500);
+            IncreaseAmmo(AmmoType.Shells, 500);
+            IncreaseAmmo(AmmoType.SMG, 500);
+        }
+    }
+
     public int GetAmmoAmount(AmmoType ammoType)
     {
         return GetAmmoSlot(ammoType).ammoAmount;

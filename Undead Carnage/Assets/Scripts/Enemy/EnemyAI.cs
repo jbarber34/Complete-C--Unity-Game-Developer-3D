@@ -3,7 +3,6 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
-    [SerializeField] Transform target;
     [SerializeField] float chaseRange = 5f;
     [SerializeField] float turnSpeed = 5f;
 
@@ -11,13 +10,18 @@ public class EnemyAI : MonoBehaviour
     float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
     EnemyHealth health;
-
+    Transform target;
+    AudioSource[] audioSources;
+    AudioSource engageAudioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         health = GetComponent<EnemyHealth>();
+        target = FindObjectOfType<PlayerHealth>().transform;
+        audioSources = GetComponents<AudioSource>();
+        engageAudioSource = audioSources[1];
     }
 
     // Update is called once per frame
@@ -33,6 +37,7 @@ public class EnemyAI : MonoBehaviour
         if (isProvoked)
         {
             EngageTarget();
+
         }
         else if (distanceToTarget <= chaseRange)
         {
@@ -51,6 +56,10 @@ public class EnemyAI : MonoBehaviour
         GetComponent<Animator>().SetBool("Attack", false);
         GetComponent<Animator>().SetTrigger("Move");
         navMeshAgent.SetDestination(target.position);
+        if (!engageAudioSource.isPlaying)
+        {
+            engageAudioSource.Play();
+        }
     }
 
     private void EngageTarget()

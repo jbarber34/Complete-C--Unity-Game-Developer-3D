@@ -51,6 +51,12 @@ namespace StarterAssets
 		[Tooltip("How far in degrees can you move the camera down")]
 		public float BottomClamp = -90.0f;
 
+		[Header("Footsteps")]
+		[Tooltip("The sound to play when walking")]
+		public AudioSource[] audioSources;
+		public AudioSource walkingAudioSource;
+		public AudioSource runningAudioSource;
+
 		// cinemachine
 		private float _cinemachineTargetPitch;
 
@@ -108,6 +114,10 @@ namespace StarterAssets
 			// reset our timeouts on start
 			_jumpTimeoutDelta = JumpTimeout;
 			_fallTimeoutDelta = FallTimeout;
+
+			audioSources = GetComponents<AudioSource>();
+			walkingAudioSource = audioSources[0];
+			runningAudioSource = audioSources[1];
 		}
 
 		private void Update()
@@ -155,6 +165,46 @@ namespace StarterAssets
 		{
 			// set target speed based on move speed, sprint speed and if sprint is pressed
 			float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
+
+			// Check if the player is moving
+			if (_input.move != Vector2.zero && Grounded)
+			{
+				// Play the corresponding audio source
+				if (_input.sprint)
+				{
+					if (!runningAudioSource.isPlaying)
+					{
+						runningAudioSource.Play();
+					}
+					if (walkingAudioSource.isPlaying)
+					{
+						walkingAudioSource.Stop();
+					}
+				}
+				else
+				{
+					if (!walkingAudioSource.isPlaying)
+					{
+						walkingAudioSource.Play();
+					}
+					if (runningAudioSource.isPlaying)
+					{
+						runningAudioSource.Stop();
+					}
+				}
+			}
+			else
+			{
+				// Stop both audio sources if the player is not moving
+				if (walkingAudioSource.isPlaying)
+				{
+					walkingAudioSource.Stop();
+				}
+				if (runningAudioSource.isPlaying)
+				{
+					runningAudioSource.Stop();
+				}
+			}
 
 			// a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
 

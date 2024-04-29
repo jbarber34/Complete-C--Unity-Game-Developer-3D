@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AmmoPickup : MonoBehaviour
+public class BatteryPickup : MonoBehaviour
 {
-    [SerializeField] AmmoType ammoType;
-    [SerializeField] int ammoAmount = 5;
+    [SerializeField] float restoreAngle = 50f;
+    [SerializeField] float restoreIntensity = 25f;
     AudioSource audioSource;
     bool isPickedUp = false;
 
@@ -19,7 +19,8 @@ public class AmmoPickup : MonoBehaviour
         if (other.gameObject.tag == "Player" && !isPickedUp)
         {
             isPickedUp = true;
-            other.GetComponent<Ammo>().IncreaseAmmo(ammoType, ammoAmount);
+            other.GetComponentInChildren<FlashLightSystem>().AddLightAngle(restoreAngle);
+            other.GetComponentInChildren<FlashLightSystem>().AddLightIntensity(restoreIntensity);
             // Get all Renderer components in children and disable them
             foreach (var renderer in GetComponentsInChildren<Renderer>())
             {

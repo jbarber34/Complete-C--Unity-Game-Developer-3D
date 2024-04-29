@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AmmoPickup : MonoBehaviour
+public class TreasurePickup : MonoBehaviour
 {
-    [SerializeField] AmmoType ammoType;
-    [SerializeField] int ammoAmount = 5;
     AudioSource audioSource;
     bool isPickedUp = false;
 
@@ -19,7 +17,7 @@ public class AmmoPickup : MonoBehaviour
         if (other.gameObject.tag == "Player" && !isPickedUp)
         {
             isPickedUp = true;
-            other.GetComponent<Ammo>().IncreaseAmmo(ammoType, ammoAmount);
+            GetComponent<VictoryHandler>().HandleVictory();
             // Get all Renderer components in children and disable them
             foreach (var renderer in GetComponentsInChildren<Renderer>())
             {
